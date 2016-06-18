@@ -1,5 +1,5 @@
 import React from 'react';
-import FormularioMensaje from './FormularioMensaje.react';
+import FormularioMensajeContainer from './FormularioMensajeContainer.react';
 import ListaMensajes from './ListaMensajes.react';
 
 // Presentational Component
@@ -8,7 +8,7 @@ const ChatApp = () => {
     <h1>IO Extended Chat</h1>
     <div className="row">
       <div className="col s12 m4">
-        <FormularioMensaje />
+        <FormularioMensajeContainer />
       </div>
       <div className="col s12 m8">
         <ListaMensajes />

@@ -3,19 +3,15 @@ import React from 'react';
 import FormularioMensaje from './FormularioMensaje.react'
 
 import { connect } from 'react-redux'
+import {sendChatMessage} from '../actions'
 
 const mapStateToProps = (state, ownProps) => {
-  console.log("mapStateToProps", state);
   return state || {}
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onClick : (usuario, mensaje) => dispatch({
-      type : 'ENVIAR_MENSAJE',
-      usuario : usuario,
-      texto : mensaje
-    })
+    onClick : (usuario, mensaje) => sendChatMessage(usuario, mensaje)
   }
 };
 

@@ -1,16 +1,18 @@
 var chat = function (state = {}, action){
   switch (action.type) {
     case 'ENVIAR_MENSAJE':
-      return Object.assign({},{
+      console.log('Agregado');
+      return Object.assign({},state, {
         usuario: action.usuario,
         texto: action.texto
       });
-      break;
     case 'RECIBIR_MENSAJE':
-
-      break;
+      console.log('Recibimos', action);
+      return Object.assign({},state, {
+        chats : action.chats
+      });
     default:
-
+      return state;
   }
 };
 module.exports = chat;

@@ -1,6 +1,6 @@
 import React from 'react';
 import FormularioMensajeContainer from './FormularioMensajeContainer.react';
-import ListaMensajes from './ListaMensajes.react';
+import ListaMensajesContainer from './ListaMensajesContainer.react';
 
 // Presentational Component
 const ChatApp = () => {
@@ -11,7 +11,7 @@ const ChatApp = () => {
         <FormularioMensajeContainer />
       </div>
       <div className="col s12 m8">
-        <ListaMensajes />
+        <ListaMensajesContainer />
       </div>
     </div>
   </div>;
